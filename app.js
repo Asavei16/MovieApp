@@ -13,7 +13,7 @@ app.get('/results', (req, res)=> {
 
     let query = req.query.search;
 
-    request('https://api.themoviedb.org/3/search/movie?api_key=19ad416db5f018cc8b2482a686deb0e4&query='+query, (error, response, body) => {
+    request('https://api.themoviedb.org/3/search/movie?api_key=914bd3f3fc580726cd900f5cb316db32&query='+query, (error, response, body) => {
         if(error) {
             console.log(error);
         }
@@ -21,7 +21,10 @@ app.get('/results', (req, res)=> {
         let data = JSON.parse(body);
         res.render('movies', {data:data, searchQuery:query});
 
+
     });
+    // 'https://api.themoviedb.org/3/search/movie?api_key=19ad416db5f018cc8b2482a686deb0e4&query='
+    // movie?api_key={api_key}&query='
 
 });
 
