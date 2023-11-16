@@ -1,6 +1,7 @@
 # MovieApp
 Movie App in **Express.js** & **Node.js** using API
-
+We took data through the API **(https://www.themoviedb.org/**) and implemented using **Express.js & Node.js
+**
 
 ## Search Page
 
